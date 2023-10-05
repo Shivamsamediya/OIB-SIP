@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="style13.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <p>
+                Authenticate Yourself
+            </p>
+        </header> <br><br><br>
+        <div class="loginpage">
+            <form>
+                <div class="e">
+                <label class="email" for="email">Enter Username or Email</label>
+                <input type="text" name="email" id="email">
+                </div><br>
+                <div class="p">
+                    <label class="password" for="password">Enter Your Password</label>
+                    <input type="password" name="password" id="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+">
+                </div><br><br>
+                <div class="submit">
+                    <input class="input" id="sub" type="submit" value="Submit" onclick="Verify();"></input>
+                    <button class="rule" id="rule" type="button" onclick="Show('rules');">Rules</button>
+                </div>
+            </form>
+
+            <div id="rules">
+               <ul>
+                   <li>Username must have between 3 and 15 characters</li>
+                   <li>Password must have atleast 8 characters</li>
+                   <li>Username and Password required</li>
+                   <li>Use only numbers and letters</li>
+               </ul>
+            </div>  
+        </div>
+    </div>
+</body>
+<script>
+    function Show(id)
+{
+  if (document.getElementById(id).style.display == 'none') {
+       document.getElementById(id).style.display = 'block';
+  }
+  else {
+       document.getElementById(id).style.display = 'none';
+  }
+};
+
+function Verify() {
+    var userRef = "msdhoni";
+    var passRef = "07071981"; 
+    
+  var user =  document.getElementById("email").value;
+  var pass = document.getElementById("password").value;
+
+  if (user == userRef || pass == passRef) {
+  alert("Connexion")
+  } else {
+  alert("It's seem you make a mistake...")
+  }
+};
+</script>
+</html>

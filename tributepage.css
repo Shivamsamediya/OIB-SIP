@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ .Container{
+    height: 120vh;
+    width: 100vw;
+ }
+
+ .background{
+    background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202210/virat_kohli_vs_pakistan_1-sixteen_nine.jpg?VersionId=DopQIMzKYQkj40IS_b93U5nKyDquqadN);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(8px);
+
+ }
+
+.details{
+    height: 180px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    color:beige;
+    font-weight: bold;   
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+#name{
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.4);
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+}
+
+#tag{
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.4);
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+}
+.About{
+    height: 400px;;
+    width: 100%;
+    background-color: white;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    font-weight: bold;   
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.4);
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+
+} 
+
+
+
